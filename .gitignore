@@ -1,0 +1,9 @@
+# Executable
+kroman
+kroman_test
+
+# obj files
+*.o
+
+# dSYM for debugging
+/*.dSYM
