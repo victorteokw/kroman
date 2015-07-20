@@ -4,7 +4,21 @@ kroman is a command line utility that converts hanguls to romanized syllables li
 
 It's lightweight, efficient, and enjoyable.
 
-## basic usage
+## Installation
+### with brew on OS X
+On OS X, you can install kroman with brew
+```
+brew tap cheunghy/kroman
+brew install kroman
+```
+
+### manually
+You may download the source code and make it. No dependencies are needed.
+```
+make install
+```
+
+## Basic usage
 ``` 
 kroman < nice_korean_song.txt > nice_singable.txt
 ```

@@ -6,6 +6,8 @@ PREFIX ?= /usr/local
 BINDIR = $(PREFIX)/bin
 MANDIR = $(PREFIX)/share/man/man1
 
+.DEFAULT_GOAL:= kroman
+
 all: test kroman clean
 
 test: $(SOURCE_FILES)
