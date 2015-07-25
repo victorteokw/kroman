@@ -1,8 +1,20 @@
 # kroman
 
-kroman is a command line utility that converts hanguls to romanized syllables line by line.
+Kroman is a Korean hangul romanization tool.
+
+It's currently implemented as a command line utility, a ruby gem,
+a python package, and a nodejs package. Editor plugins will be implemented.
+
+This is the C command line utility.
 
 It's lightweight, efficient, and enjoyable.
+
+## Implementations
+
+- [kroman command line tool](https://github.com/cheunghy/kroman)
+- [kroman ruby gem](https://github.com/cheunghy/kroman-gem)
+- [kroman python package](https://github.com/cheunghy/kroman-py)
+- [kroman nodejs package](https://github.com/cheunghy/kroman-js)
 
 ## Installation
 ### with brew on OS X
@@ -19,11 +31,10 @@ make install
 ```
 
 ## Basic usage
-``` 
+```
 kroman < nice_korean_song.txt > nice_singable.txt
 ```
 
-## Effect
 ```
 Before:
 
@@ -35,5 +46,10 @@ heui-mang-eun jam-deur-ji anh-neun ggum
 
 ```
 
-## Contribution
-Any kind of contribution is welcome.
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/cheunghy/kroman.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
