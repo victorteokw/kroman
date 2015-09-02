@@ -11,12 +11,12 @@ MANDIR = $(PREFIX)/share/man/man1
 all: test kroman clean
 
 test: $(SOURCE_FILES)
-	clang -o kroman_test $^ $(CFLAGS)
+	$(CC) -o kroman_test $^ $(CFLAGS)
 	./kroman_test
 
 kroman: $(SOURCE_FILES)
 	@echo start compiling kroman
-	clang -o $@ $^ $(CFLAGS)
+	$(CC) -o $@ $^ $(CFLAGS)
 	@echo finish compiling kroman
 
 clean:
