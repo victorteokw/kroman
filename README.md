@@ -1,22 +1,13 @@
-# kroman
 
-Kroman is a Korean hangul romanization tool.
+# Kroman
 
-It's currently implemented as a command line utility, a ruby gem,
-a python package, and a nodejs package. Editor plugins will be implemented.
+Kroman is ultimate Korean hangul romanization tool. It has a lot of
+implementations.
 
-This is the C command line utility.
-
-It's lightweight, efficient, and enjoyable.
-
-## Implementations
-
-- [kroman command line tool](https://github.com/cheunghy/kroman)
-- [kroman ruby gem](https://github.com/cheunghy/kroman-gem)
-- [kroman python package](https://github.com/cheunghy/kroman-py)
-- [kroman nodejs package](https://github.com/cheunghy/kroman-js)
+This is the Command line tool.
 
 ## Installation
+
 ### with brew on OS X
 On OS X, you can install kroman with brew
 ```
@@ -30,8 +21,9 @@ You may download the source code and make it. No dependencies are needed.
 make install
 ```
 
-## Basic usage
-```
+## Usage
+
+``` bash
 kroman < nice_korean_song.txt > nice_singable.txt
 ```
 
@@ -46,10 +38,31 @@ heui-mang-eun jam-deur-ji anh-neun ggum
 
 ```
 
+## Implementations
+
+### Applications
+
+- [kroman command line tool](https://github.com/cheunghy/kroman)
+
+### Library and frameworks
+
+- [kroman ruby gem](https://github.com/cheunghy/kroman-gem)
+- [kroman python package](https://github.com/cheunghy/kroman-py)
+- [kroman nodejs package](https://github.com/cheunghy/kroman-js)
+- [kroman Objective-C pod](https://github.com/cheunghy/kroman-objc)
+- [kroman swift pod](https://github.com/cheunghy/kroman-swift)
+
+### Editor plugins
+
+- [kroman emacs plugin](https://github.com/cheunghy/kroman-el)
+- [kroman Sublime Text plugin](https://github.com/cheunghy/kroman-sublime)
+- [kroman atom plugin](https://github.com/cheunghy/kroman-atom)
+- [kroman TextMate plugin](https://github.com/cheunghy/kroman-tm)
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/cheunghy/kroman.
+Bug reports and pull requests are welcome on Github at https://github.com/cheunghy/kroman.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Kroman is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
