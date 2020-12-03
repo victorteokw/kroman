@@ -1,6 +1,7 @@
 #include "kroman_convert.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 #define KROMAN_GA 0xac00
 #define KROMAN_HIH 0xd7a3
 #define KROMAN_HEAD_INTERVAL 588
