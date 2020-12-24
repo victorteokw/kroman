@@ -1,5 +1,6 @@
 #include "kroman_process.h"
 #include "kroman_convert.h"
+#include "kroman_adjust.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,6 +33,8 @@ void kroman_process_line(char *user_line, FILE *outstream) {
   size_t len = wcslen(wide_line);
   bool last_is_hangul = false;
   for (size_t i = 0; i < len; ++i) {
+    if(i < len - 1)
+      kroman_adjust(&(wide_line[i]), &(wide_line[i + 1]));
     wchar_t wide_char = wide_line[i];
     char *retstring = malloc(sizeof(char) * KROMAN_SIZE);
     memset(retstring, 0, sizeof(char) * KROMAN_SIZE);
